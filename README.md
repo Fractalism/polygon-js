@@ -56,6 +56,7 @@ This will call a function as soon as any point is done. The output will be a poi
 p.generateStream(4,100,{x:0,y:0}, function (err, data) {
     console.log({err:err,data:data});
 });
+
 // minimalist
 p.generateStream(function (err, data) {
     console.log({err:err,data:data});
