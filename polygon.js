@@ -77,18 +77,3 @@ function PolygonJS () {
 		}
 	}
 }
-
-var p = new PolygonJS();
-
-// sync
-console.log(p.generateSync(4,100,{x:0,y:0}));
-
-// callback
-p.generate(4,100,{x:0,y:0}, function (err, data) {
-	console.log({err:err,data:data});
-});
-
-// stream
-p.generateStream(4,100,{x:0,y:0}, function (err, data) {
-	console.log({err:err,data:data});
-});
