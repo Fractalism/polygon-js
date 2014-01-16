@@ -27,12 +27,12 @@ This will call a function when the generator is done. The output will be an Arra
 
 ````javascript
 // 4 edges, 100px radius, M(0|0)
-p.generate(4,100,{x:0,y:0}, function (err, data) {
+polygon.generate(4,100,{x:0,y:0}, function (err, data) {
     console.log({err:err,data:data});
 });
 
 // minimalist
-p.generate(function (err, data) {
+polygon.generate(function (err, data) {
     console.log({err:err,data:data});
 });
 ````
@@ -42,10 +42,10 @@ This will return all points as an Array when done. Those points are Objects with
 
 ````javascript
 // 4 edges, 100px radius, M(0|0)
-console.log(p.generateSync(4,100,{x:0,y:0}));
+console.log(polygon.generateSync(4,100,{x:0,y:0}));
 
 // minimalist
-console.log(p.generateSync());
+console.log(polygon.generateSync());
 ````
 
 ###Stream
@@ -53,12 +53,12 @@ This will call a function as soon as any point is done. The output will be a poi
 
 ````javascript
 // 4 edges, 100px radius, M(0|0)
-p.generateStream(4,100,{x:0,y:0}, function (err, data) {
+polygon.generateStream(4,100,{x:0,y:0}, function (err, data) {
     console.log({err:err,data:data});
 });
 
 // minimalist
-p.generateStream(function (err, data) {
+polygon.generateStream(function (err, data) {
     console.log({err:err,data:data});
 });
 ````
