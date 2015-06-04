@@ -49,19 +49,7 @@ console.log(polygon.generateSync());
 ````
 
 ###Stream
-This will call a function as soon as any point is done. The output will be a point (Object) with x and y properties.
-
-````javascript
-// 4 edges, 100px radius, M(0|0)
-polygon.generateStream(4,100,{x:0,y:0}, function (err, data) {
-    console.log({err:err,data:data});
-});
-
-// minimalist
-polygon.generateStream(function (err, data) {
-    console.log({err:err,data:data});
-});
-````
+Deprecated.
 
 ##License
 
